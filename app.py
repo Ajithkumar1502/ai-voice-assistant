@@ -2,10 +2,9 @@ from flask import Flask, render_template, request, jsonify, session, redirect
 from flask_cors import CORS
 import requests
 import os
-from dotenv import load_dotenv
 
 # ---------------- LOAD ENV ----------------
-load_dotenv()
+
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # ---------------- FLASK APP ----------------
