@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Voice Assistant</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="chat-container">
+    <h1>🤖 AI Voice & Text Assistant</h1>
+    <div id="chatBox" class="chat-box"></div>
+
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type or speak..." />
+        <button onclick="startVoice()" title="Speak">🎤</button>
+        <button onclick="sendMessage()" title="Send">Send</button>
+        <button onclick="speakLast()" title="Listen">🔊</button>
+        <button id="themeBtn" onclick="toggleTheme()">🌓</button>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+<script src="/static/theme.js"></script>
+</body>
+</html>
